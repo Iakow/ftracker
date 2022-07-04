@@ -10,5 +10,6 @@ const pixelRatioBaseScale = 3 / PixelRatio.get();
 export function normalize(size) {
   console.log("normalize");
   const newSize = size * widthBaseScale * pixelRatioBaseScale;
+  console.log(Math.round(PixelRatio.roundToNearestPixel(newSize)))
   return Math.round(PixelRatio.roundToNearestPixel(newSize));
 }

@@ -8,7 +8,7 @@ export const ListItem = ({ data }) => {
     <TouchableOpacity
       style={styles.item}
       onPress={() => {
-        navigation.navigate("Add", {
+        navigation.navigate("Transaction", {
           data,
         });
       }}
@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 14,
     flex: 1,
-    // width: "100%",
     height: 50,
     margin: 4,
     backgroundColor: "#e5e3e3",

@@ -116,7 +116,8 @@ const styles = StyleSheet.create({
     color: "#5f7ece",
     marginTop: 20,
     fontWeight: "bold",
-    fontSize: normalize(18),
+    // fontSize: normalize(18),
+    fontSize: 18
     // fontSize: 18,
   },
   input: {

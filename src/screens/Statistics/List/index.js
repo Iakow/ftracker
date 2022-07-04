@@ -1,9 +1,10 @@
 import { StyleSheet, Text, Button, SafeAreaView, FlatList } from "react-native";
 import { useContext, useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
-import { ALL_TRANSACTIONS } from "../../graphql/queries";
-import { AuthContext } from "../../providers/AuthProvider";
+import { ALL_TRANSACTIONS } from "../../../graphql/queries";
+import { AuthContext } from "../../../providers/AuthProvider";
 import { ListItem } from "./ListItem";
+import { FAB } from "../../../components/FAB";
 
 const Bomb = () => {
   useEffect(() => {
@@ -34,11 +35,9 @@ export function TransactionsListScreen({ navigation }) {
       )}
       {x && <Bomb />}
 
-      <Button
-        title="New"
+      <FAB
         onPress={() => {
-          // navigation.navigate("Add");
-          setX(true);
+          navigation.navigate("Transaction");
         }}
       />
     </SafeAreaView>
