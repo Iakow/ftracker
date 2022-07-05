@@ -36,7 +36,7 @@ export const TransactionScreen = ({ navigation, route }) => {
   );
 
   const leaveScreen = () => {
-    navigation.navigate("Main");
+    navigation.goBack();
   };
 
   useEffect(() => {
